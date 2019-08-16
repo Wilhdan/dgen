@@ -1,0 +1,29 @@
+document:
+    - cover:
+        name: title_page
+        template_conf: 'title_config.yaml'
+        contents:
+            - '../dgen/dgen-examples/example-report/metadata.yaml'
+    - page:
+        name: document_information
+        contents: 
+            - ../dgen/dgen-examples/example-report/docinfo.md
+            - ../dgen/dgen-examples/example-report/metadata.yaml
+        template_conf: 'body_config.yaml'
+    - toc:
+        name: table_of_contents
+        template_conf: 'toc_config.yaml'
+    - page:
+        name: report
+        contents: 
+            - '../dgen/dgen-examples/example-report/exec.md'
+            - '../dgen/dgen-examples/example-report/intro.md'
+            - '../dgen/dgen-examples/example-report/findings/*.md'
+            - '../dgen/dgen-examples/example-report/appendix.md'
+            - '../dgen/dgen-examples/example-report/metadata.yaml'
+        template_conf: 'body_config.yaml'
+filename: 'pentest_report'
+classification: Commercial-in-Confidence
+template: '../dgen/dgen-examples/dgen-templates/default'
+template_conf: 'document_config.yaml'
+
