@@ -4,7 +4,7 @@ These files have been developed to build and test a dgen document.
 
 ## prerequisites
 
-To run the unit test, your machine will need the all the dependencies required by dgen, I suggest you look at dgen's build.sh and follow the commands there.
+To run the unit test, your machine will need the all the dependencies required by dgen, I suggest you look at dgen's `build.sh` and follow the commands there.
 
 Additionally, you will need to install mock: `pip install mock`.
 
